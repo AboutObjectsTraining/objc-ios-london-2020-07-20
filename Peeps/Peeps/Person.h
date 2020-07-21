@@ -3,6 +3,8 @@
 
 #import <Foundation/Foundation.h>
 
+@class Dog;
+
 @interface Person : NSObject {
 @private
     NSString *_firstName;
@@ -31,5 +33,8 @@
 
 - (NSInteger)age;
 - (void)setAge:(NSInteger)newValue;
+
+- (Dog *)dog;
+- (void)setDog:(Dog *)newValue;
 
 @end

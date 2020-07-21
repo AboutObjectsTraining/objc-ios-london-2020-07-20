@@ -41,4 +41,41 @@
     NSLog(@"%@", fred);
 }
 
+- (void)testMessageForwarding {
+    id fred = [Person personWithFirstName:@"Fred"
+                                 lastName:@"Smith"
+                                      age:33];
+    Dog *rover = [[Dog alloc] init];
+    [fred setDog:rover];
+    
+    NSLog(@"%@", fred);
+    
+//    [fred font];
+    
+    if ([fred respondsToSelector:@selector(bark)]) {
+        [fred bark];
+    }
+    
+//    [fred performSelector:NSSelectorFromString(@"foo")];
+}
+
+- (void)testCopyingDog {
+    Dog *rover = [[Dog alloc] init];
+    if ([rover conformsToProtocol:@protocol(NSCopying)]) {
+        Dog *copyOfRover = [rover copy];
+        NSLog(@"Copy of rover: %@", copyOfRover);
+    }
+}
+
+- (void)testCopyingString {
+    NSString *foo = @"Foo bar baz yadda yadda yadda";
+    NSString *copyOfFoo = [foo copy];
+    NSLog(@"Copy of string foo: %@", copyOfFoo);
+    
+    NSMutableString *mutableFoo = [NSMutableString stringWithString:foo];
+    NSMutableString *copyOfMutableFoo = [mutableFoo mutableCopy];
+    NSLog(@"Copy of mutable string foo: %@", copyOfMutableFoo);
+    [copyOfMutableFoo appendString:@"Baz"];
+}
+
 @end

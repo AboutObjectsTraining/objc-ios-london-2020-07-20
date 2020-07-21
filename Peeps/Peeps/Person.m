@@ -2,8 +2,25 @@
 // See LICENSE.txt for this project's licensing information.
 
 #import "Person.h"
+#import "Dog.h"
 
-@implementation Person
+@implementation Person {
+    Dog *_dog;
+}
+
+- (id)forwardingTargetForSelector:(SEL)aSelector {
+    if ([[self dog] respondsToSelector:aSelector]) {
+        return [self dog];
+    }
+    return [super forwardingTargetForSelector:aSelector];
+}
+
+- (BOOL)respondsToSelector:(SEL)aSelector {
+    if ([super respondsToSelector:aSelector]) {
+        return YES;
+    }
+    return [[self dog] respondsToSelector:aSelector];
+}
 
 - (id)initWithFirstName:(NSString *)aFirstName
                lastName:(NSString *)aLastName {
@@ -55,6 +72,13 @@
 }
 - (void)setAge:(NSInteger)newValue {
     _age = newValue;
+}
+
+- (Dog *)dog {
+    return _dog;
+}
+- (void)setDog:(Dog *)newValue {
+    _dog = newValue;
 }
 
 - (NSString *)description {

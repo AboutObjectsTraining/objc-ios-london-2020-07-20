@@ -12,6 +12,9 @@
 		B4DD83A324C5EB690041A4A6 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = B4DD83A124C5EB690041A4A6 /* Person.m */; };
 		B4DD83AB24C5EE4F0041A4A6 /* PeepsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4DD83AA24C5EE4F0041A4A6 /* PeepsTests.m */; };
 		B4DD83AD24C5EE4F0041A4A6 /* Peeps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4DD839524C5EB200041A4A6 /* Peeps.framework */; };
+		B4DD83B524C6E8DC0041A4A6 /* Dog.h in Headers */ = {isa = PBXBuildFile; fileRef = B4DD83B324C6E8DC0041A4A6 /* Dog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4DD83B624C6E8DC0041A4A6 /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = B4DD83B424C6E8DC0041A4A6 /* Dog.m */; };
+		B4DD83BB24C71F5F0041A4A6 /* ClassClusterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4DD83BA24C71F5F0041A4A6 /* ClassClusterTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +36,9 @@
 		B4DD83A824C5EE4F0041A4A6 /* PeepsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeepsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4DD83AA24C5EE4F0041A4A6 /* PeepsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PeepsTests.m; sourceTree = "<group>"; };
 		B4DD83AC24C5EE4F0041A4A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4DD83B324C6E8DC0041A4A6 /* Dog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
+		B4DD83B424C6E8DC0041A4A6 /* Dog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
+		B4DD83BA24C71F5F0041A4A6 /* ClassClusterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassClusterTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +84,8 @@
 				B4DD839824C5EB200041A4A6 /* Peeps.h */,
 				B4DD83A024C5EB690041A4A6 /* Person.h */,
 				B4DD83A124C5EB690041A4A6 /* Person.m */,
+				B4DD83B324C6E8DC0041A4A6 /* Dog.h */,
+				B4DD83B424C6E8DC0041A4A6 /* Dog.m */,
 				B4DD839924C5EB200041A4A6 /* Info.plist */,
 			);
 			path = Peeps;
@@ -87,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				B4DD83AA24C5EE4F0041A4A6 /* PeepsTests.m */,
+				B4DD83BA24C71F5F0041A4A6 /* ClassClusterTests.m */,
 				B4DD83AC24C5EE4F0041A4A6 /* Info.plist */,
 			);
 			path = PeepsTests;
@@ -100,6 +109,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4DD839A24C5EB200041A4A6 /* Peeps.h in Headers */,
+				B4DD83B524C6E8DC0041A4A6 /* Dog.h in Headers */,
 				B4DD83A224C5EB690041A4A6 /* Person.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -201,6 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4DD83B624C6E8DC0041A4A6 /* Dog.m in Sources */,
 				B4DD83A324C5EB690041A4A6 /* Person.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4DD83AB24C5EE4F0041A4A6 /* PeepsTests.m in Sources */,
+				B4DD83BB24C71F5F0041A4A6 /* ClassClusterTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

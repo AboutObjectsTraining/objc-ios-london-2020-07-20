@@ -3,5 +3,9 @@
 
 #import <Foundation/Foundation.h>
 
-#import <Peeps/Person.h>
-#import <Peeps/Dog.h>
+@interface Dog : NSObject <NSCopying>
+
+- (void)bark;
+
+@end
+
