@@ -37,4 +37,30 @@
     }
 }
 
+- (void)testWorkingWithDictionaries {
+    Person *p = [Person personWithFirstName:@"Fred" lastName:@"Smith" age:33];
+    Dog *d = [[Dog alloc] init];
+    
+    NSDictionary *dict = @{ @"person" : p,
+                            @"dog" : d,
+                            @"number" : @42, };
+    
+    for (NSString *key in dict) {
+        //        id obj = [dict objectForKey:key];
+        NSLog(@"value: %@, key: %@", dict[key], key);
+    }
+    
+    NSMutableDictionary *mutableDict = [dict mutableCopy];
+    [mutableDict setObject:@99 forKey:@"number"];
+    NSLog(@"%@", mutableDict);
+    
+    
+    // Key-Value Coding example
+    NSString *name = [p valueForKey:@"fullName"];
+    NSLog(@"full name is %@", name);
+    
+    [p setValue:@"Jones" forKey:@"lastName"];
+    NSLog(@"%@", p);
+}
+
 @end
