@@ -20,6 +20,21 @@
     NSArray *a1 = [NSArray arrayWithObjects:p, d, @"Foo", nil];
     NSLog(@"%@", a1);
     
+    NSArray *a2 = @[p, d, @"Bar", @23];
+    NSLog(@"%@", a2);
+    
+    NSMutableArray *mutableArray = [a2 mutableCopy];
+    [mutableArray insertObject:@"Woo!" atIndex:0];
+    NSLog(@"%@", mutableArray);
+    
+    for (int i = 0; i < [mutableArray count]; i++) {
+        //        NSLog(@"index: %d, value: %@", i, [mutableArray objectAtIndex:i]);
+        NSLog(@"index: %d, value: %@", i, mutableArray[i]);
+    }
+    
+    for (id currObj in [mutableArray reverseObjectEnumerator]) {
+        NSLog(@"%@", currObj);
+    }
 }
 
 @end
