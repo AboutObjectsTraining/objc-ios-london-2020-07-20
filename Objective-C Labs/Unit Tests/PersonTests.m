@@ -120,6 +120,7 @@
     
     printf("\nSorted People:\n--------------\n");
     [sortedPeeps makeObjectsPerformSelector:@selector(display)];
+    [sortedPeeps makeObjectsPerformSelector:@selector(setLastName:) withObject:@"Jones"];
 }
 
 @end

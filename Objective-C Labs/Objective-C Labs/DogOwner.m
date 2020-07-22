@@ -26,7 +26,8 @@
 
 - (NSString *)description
 {
-    return [NSString stringWithFormat:@"\nOwner: %@\nDogs: %@", [self fullName], [self dogs]];
+    return [NSString stringWithFormat:@"\nOwner: %@\nDogs: %@",
+            [self fullName], [self dogs]];
 }
 
 ////////

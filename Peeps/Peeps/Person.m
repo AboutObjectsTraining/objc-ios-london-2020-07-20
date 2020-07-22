@@ -33,8 +33,8 @@
     self = [super init];
     if (self == nil) return nil;
     
-    _firstName = aFirstName;
-    _lastName = aLastName;
+    _firstName = [aFirstName copy];
+    _lastName = [aLastName copy];
     _age = anAge;
     
     // Don't call our own methods until after we've initialized ivars.
@@ -52,15 +52,14 @@
     return _firstName;
 }
 - (void)setFirstName:(NSString *)newValue {
-    // TODO: copy the value
-    _firstName = newValue;
+    _firstName = [newValue copy];
 }
 
 - (NSString *)lastName {
     return _lastName;
 }
 - (void)setLastName:(NSString *)newValue {
-    _lastName = newValue;
+    _lastName = [newValue copy];
 }
 
 - (NSString *)fullName {

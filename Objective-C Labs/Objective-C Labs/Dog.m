@@ -20,7 +20,7 @@
 
 - (void)growl
 {
-    printf("%s: Grrrrrr!\n", self.name.UTF8String);
+    printf("%s: Grrrrrr!\n", [[self name] UTF8String]);
 }
 
 - (void)bark
@@ -65,13 +65,13 @@
 {
     [self growl];
     
-    [self.delegate dogDidHearDoorbell:self];
+    [_delegate dogDidHearDoorbell:self];
     
-    if (self.delegate == nil || [self.delegate dogShouldBark:self]) {
+    if (_delegate == nil || [_delegate dogShouldBark:self]) {
         [self bark];
     }
     
-    if (self.delegate == nil || [self.delegate dogShouldWagTail:self]) {
+    if (_delegate == nil || [_delegate dogShouldWagTail:self]) {
         [self wagTail];
     }
 }
