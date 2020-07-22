@@ -23,18 +23,34 @@ const UIEdgeInsets CLNTextInsets = {
     self = [super initWithFrame:frame];
     if (self == nil) return nil;
     
-    self.layer.borderWidth = 3;
-    self.layer.borderColor = UIColor.whiteColor.CGColor;
-    
-    self.layer.cornerRadius = 10;
-    self.layer.masksToBounds = YES;
+    [self configureLayer];
+    [self configureGestureRecognizers];
     
     return self;
+}
+
+- (void)configureLayer {
+    self.layer.borderWidth = 3;
+    self.layer.borderColor = UIColor.whiteColor.CGColor;
+    self.layer.cornerRadius = 10;
+    self.layer.masksToBounds = YES;
+}
+
+- (void)configureGestureRecognizers {
+    UITapGestureRecognizer *recognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(bounce)];
+    recognizer.numberOfTapsRequired = 2;
+    [self addGestureRecognizer:recognizer];
 }
 
 - (void)setHighlighted:(BOOL)highlighted {
     _highlighted = highlighted;
     self.alpha = highlighted ? 0.5 : 1.0;
+}
+
+// MARK: - Animation
+
+- (void)bounce {
+    NSLog(@"In %s", __func__);
 }
 
 // MARK: - Drawing and resizing
