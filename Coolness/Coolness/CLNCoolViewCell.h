@@ -3,9 +3,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CLNAppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
+@interface CLNCoolViewCell : UIView
 
 @end
-

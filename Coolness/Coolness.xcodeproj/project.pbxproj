@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B4225E1524C8576100CCCA32 /* CLNCoolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4225E1424C8576100CCCA32 /* CLNCoolViewController.m */; };
+		B4225E1824C86B2400CCCA32 /* CLNCoolViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B4225E1724C86B2400CCCA32 /* CLNCoolViewCell.m */; };
 		B46E66EF24C845DE00C0181C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B46E66EE24C845DE00C0181C /* Assets.xcassets */; };
 		B46E66F224C845DE00C0181C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B46E66F024C845DE00C0181C /* LaunchScreen.storyboard */; };
 		B46E66F524C845DE00C0181C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B46E66F424C845DE00C0181C /* main.m */; };
@@ -17,6 +18,8 @@
 /* Begin PBXFileReference section */
 		B4225E1324C8576100CCCA32 /* CLNCoolViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLNCoolViewController.h; sourceTree = "<group>"; };
 		B4225E1424C8576100CCCA32 /* CLNCoolViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLNCoolViewController.m; sourceTree = "<group>"; };
+		B4225E1624C86B2400CCCA32 /* CLNCoolViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLNCoolViewCell.h; sourceTree = "<group>"; };
+		B4225E1724C86B2400CCCA32 /* CLNCoolViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLNCoolViewCell.m; sourceTree = "<group>"; };
 		B46E66DF24C845DD00C0181C /* Coolness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coolness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B46E66EE24C845DE00C0181C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B46E66F124C845DE00C0181C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -60,6 +63,8 @@
 				B46E66FC24C849E400C0181C /* CLNAppDelegate.m */,
 				B4225E1324C8576100CCCA32 /* CLNCoolViewController.h */,
 				B4225E1424C8576100CCCA32 /* CLNCoolViewController.m */,
+				B4225E1624C86B2400CCCA32 /* CLNCoolViewCell.h */,
+				B4225E1724C86B2400CCCA32 /* CLNCoolViewCell.m */,
 				B46E66EE24C845DE00C0181C /* Assets.xcassets */,
 				B46E66F024C845DE00C0181C /* LaunchScreen.storyboard */,
 				B46E66F324C845DE00C0181C /* Info.plist */,
@@ -138,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B46E66FD24C849E400C0181C /* CLNAppDelegate.m in Sources */,
+				B4225E1824C86B2400CCCA32 /* CLNCoolViewCell.m in Sources */,
 				B46E66F524C845DE00C0181C /* main.m in Sources */,
 				B4225E1524C8576100CCCA32 /* CLNCoolViewController.m in Sources */,
 			);

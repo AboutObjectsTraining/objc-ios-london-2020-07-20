@@ -2,6 +2,7 @@
 // See LICENSE.txt for this project's licensing information.
 
 #import "CLNCoolViewController.h"
+#import "CLNCoolViewCell.h"
 
 @implementation CLNCoolViewController
 
@@ -9,8 +10,8 @@
     self.view = [[UIView alloc] init];
     self.view.backgroundColor = UIColor.brownColor;
     
-    UIView *subview1 = [[UIView alloc] initWithFrame:CGRectMake(20, 80, 220, 40)];
-    UIView *subview2 = [[UIView alloc] initWithFrame:CGRectMake(50, 150, 220, 40)];
+    UIView *subview1 = [[CLNCoolViewCell alloc] initWithFrame:CGRectMake(20, 80, 220, 40)];
+    UIView *subview2 = [[CLNCoolViewCell alloc] initWithFrame:CGRectMake(50, 150, 220, 40)];
     
     [self.view addSubview:subview1];
     [self.view addSubview:subview2];
