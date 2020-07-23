@@ -51,14 +51,33 @@ const UIEdgeInsets CLNTextInsets = {
 
 - (void)bounce {
     NSLog(@"In %s", __func__);
+    [self animateBounceWithDuration:1 size:CGSizeMake(120, 240)];
+}
+
+- (void)configureBounceWithSize:(CGSize)size {
+    [UIView setAnimationRepeatCount:5];
+    [UIView setAnimationRepeatAutoreverses:YES];
+    CGAffineTransform translation = CGAffineTransformMakeTranslation(size.width, size.height);
+    self.transform = CGAffineTransformRotate(translation, M_PI_2);
+}
+
+- (void)animateBounceWithDuration:(NSTimeInterval)duration size:(CGSize)size {
+    typeof(self) __weak weakSelf = self;
+    [UIView animateWithDuration:duration
+                     animations:^{ [weakSelf configureBounceWithSize:size]; }
+                     completion:^(BOOL finished) { weakSelf.transform = CGAffineTransformIdentity; }];
 }
 
 // MARK: - Drawing and resizing
 
 + (NSDictionary *)textAttributes {
-    // TODO: Cache the instance
-    return @{ NSFontAttributeName : [UIFont boldSystemFontOfSize:20],
-              NSForegroundColorAttributeName : UIColor.whiteColor };
+    static NSDictionary *attributes;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        attributes = @{ NSFontAttributeName : [UIFont boldSystemFontOfSize:20],
+                        NSForegroundColorAttributeName : UIColor.whiteColor };
+    });
+    return attributes;
 }
 
 - (void)setText:(NSString *)text {
