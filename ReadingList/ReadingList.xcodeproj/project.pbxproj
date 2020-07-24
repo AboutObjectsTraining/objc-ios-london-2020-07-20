@@ -15,7 +15,47 @@
 		B4225E7C24C9F38F00CCCA32 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B4225E7B24C9F38F00CCCA32 /* main.m */; };
 		B44995C424CAFA8F006D341A /* RELReadingListController.m in Sources */ = {isa = PBXBuildFile; fileRef = B44995C324CAFA8F006D341A /* RELReadingListController.m */; };
 		B44995C724CAFE78006D341A /* RELViewBookController.m in Sources */ = {isa = PBXBuildFile; fileRef = B44995C624CAFE78006D341A /* RELViewBookController.m */; };
+		B44995D424CB1731006D341A /* ReadingListModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B44995CD24CB1731006D341A /* ReadingListModel.framework */; };
+		B44995D524CB1731006D341A /* ReadingListModel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B44995CD24CB1731006D341A /* ReadingListModel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B44995E824CB18A2006D341A /* RLMBook.h in Headers */ = {isa = PBXBuildFile; fileRef = B44995DA24CB18A1006D341A /* RLMBook.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B44995E924CB18A2006D341A /* NSArray+RLMObjectMapping.h in Headers */ = {isa = PBXBuildFile; fileRef = B44995DB24CB18A1006D341A /* NSArray+RLMObjectMapping.h */; };
+		B44995EA24CB18A2006D341A /* ReadingListModel.h in Headers */ = {isa = PBXBuildFile; fileRef = B44995DC24CB18A2006D341A /* ReadingListModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B44995EB24CB18A2006D341A /* RLMStoreController.m in Sources */ = {isa = PBXBuildFile; fileRef = B44995DD24CB18A2006D341A /* RLMStoreController.m */; };
+		B44995EC24CB18A2006D341A /* RLMModelObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B44995DE24CB18A2006D341A /* RLMModelObject.m */; };
+		B44995ED24CB18A2006D341A /* NSArray+RLMObjectMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = B44995DF24CB18A2006D341A /* NSArray+RLMObjectMapping.m */; };
+		B44995EE24CB18A2006D341A /* RLMAuthor.h in Headers */ = {isa = PBXBuildFile; fileRef = B44995E024CB18A2006D341A /* RLMAuthor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B44995EF24CB18A2006D341A /* ReadingList.plist in Resources */ = {isa = PBXBuildFile; fileRef = B44995E124CB18A2006D341A /* ReadingList.plist */; };
+		B44995F024CB18A2006D341A /* RLMModelObject.h in Headers */ = {isa = PBXBuildFile; fileRef = B44995E224CB18A2006D341A /* RLMModelObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B44995F124CB18A2006D341A /* RLMBook.m in Sources */ = {isa = PBXBuildFile; fileRef = B44995E324CB18A2006D341A /* RLMBook.m */; };
+		B44995F224CB18A2006D341A /* RLMReadingList.m in Sources */ = {isa = PBXBuildFile; fileRef = B44995E424CB18A2006D341A /* RLMReadingList.m */; };
+		B44995F324CB18A2006D341A /* RLMAuthor.m in Sources */ = {isa = PBXBuildFile; fileRef = B44995E524CB18A2006D341A /* RLMAuthor.m */; };
+		B44995F424CB18A2006D341A /* RLMStoreController.h in Headers */ = {isa = PBXBuildFile; fileRef = B44995E624CB18A2006D341A /* RLMStoreController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B44995F524CB18A2006D341A /* RLMReadingList.h in Headers */ = {isa = PBXBuildFile; fileRef = B44995E724CB18A2006D341A /* RLMReadingList.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B44995D224CB1731006D341A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4225E5E24C9F38D00CCCA32 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B44995CC24CB1731006D341A;
+			remoteInfo = ReadingListModel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B44995D924CB1731006D341A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B44995D524CB1731006D341A /* ReadingListModel.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B4225E6624C9F38D00CCCA32 /* ReadingList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReadingList.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,10 +72,34 @@
 		B44995C324CAFA8F006D341A /* RELReadingListController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RELReadingListController.m; sourceTree = "<group>"; };
 		B44995C524CAFE78006D341A /* RELViewBookController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RELViewBookController.h; sourceTree = "<group>"; };
 		B44995C624CAFE78006D341A /* RELViewBookController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RELViewBookController.m; sourceTree = "<group>"; };
+		B44995CD24CB1731006D341A /* ReadingListModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReadingListModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B44995D024CB1731006D341A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B44995DA24CB18A1006D341A /* RLMBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLMBook.h; sourceTree = "<group>"; };
+		B44995DB24CB18A1006D341A /* NSArray+RLMObjectMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+RLMObjectMapping.h"; sourceTree = "<group>"; };
+		B44995DC24CB18A2006D341A /* ReadingListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadingListModel.h; sourceTree = "<group>"; };
+		B44995DD24CB18A2006D341A /* RLMStoreController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLMStoreController.m; sourceTree = "<group>"; };
+		B44995DE24CB18A2006D341A /* RLMModelObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLMModelObject.m; sourceTree = "<group>"; };
+		B44995DF24CB18A2006D341A /* NSArray+RLMObjectMapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+RLMObjectMapping.m"; sourceTree = "<group>"; };
+		B44995E024CB18A2006D341A /* RLMAuthor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLMAuthor.h; sourceTree = "<group>"; };
+		B44995E124CB18A2006D341A /* ReadingList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = ReadingList.plist; sourceTree = "<group>"; };
+		B44995E224CB18A2006D341A /* RLMModelObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLMModelObject.h; sourceTree = "<group>"; };
+		B44995E324CB18A2006D341A /* RLMBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLMBook.m; sourceTree = "<group>"; };
+		B44995E424CB18A2006D341A /* RLMReadingList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLMReadingList.m; sourceTree = "<group>"; };
+		B44995E524CB18A2006D341A /* RLMAuthor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLMAuthor.m; sourceTree = "<group>"; };
+		B44995E624CB18A2006D341A /* RLMStoreController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLMStoreController.h; sourceTree = "<group>"; };
+		B44995E724CB18A2006D341A /* RLMReadingList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLMReadingList.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B4225E6324C9F38D00CCCA32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B44995D424CB1731006D341A /* ReadingListModel.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B44995CA24CB1731006D341A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -49,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				B4225E6824C9F38D00CCCA32 /* ReadingList */,
+				B44995CE24CB1731006D341A /* ReadingListModel */,
 				B4225E6724C9F38D00CCCA32 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				B4225E6624C9F38D00CCCA32 /* ReadingList.app */,
+				B44995CD24CB1731006D341A /* ReadingListModel.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,7 +147,46 @@
 			path = ReadingList;
 			sourceTree = "<group>";
 		};
+		B44995CE24CB1731006D341A /* ReadingListModel */ = {
+			isa = PBXGroup;
+			children = (
+				B44995DC24CB18A2006D341A /* ReadingListModel.h */,
+				B44995DB24CB18A1006D341A /* NSArray+RLMObjectMapping.h */,
+				B44995DF24CB18A2006D341A /* NSArray+RLMObjectMapping.m */,
+				B44995E124CB18A2006D341A /* ReadingList.plist */,
+				B44995E024CB18A2006D341A /* RLMAuthor.h */,
+				B44995E524CB18A2006D341A /* RLMAuthor.m */,
+				B44995DA24CB18A1006D341A /* RLMBook.h */,
+				B44995E324CB18A2006D341A /* RLMBook.m */,
+				B44995E224CB18A2006D341A /* RLMModelObject.h */,
+				B44995DE24CB18A2006D341A /* RLMModelObject.m */,
+				B44995E724CB18A2006D341A /* RLMReadingList.h */,
+				B44995E424CB18A2006D341A /* RLMReadingList.m */,
+				B44995E624CB18A2006D341A /* RLMStoreController.h */,
+				B44995DD24CB18A2006D341A /* RLMStoreController.m */,
+				B44995D024CB1731006D341A /* Info.plist */,
+			);
+			path = ReadingListModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B44995C824CB1731006D341A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B44995E824CB18A2006D341A /* RLMBook.h in Headers */,
+				B44995EA24CB18A2006D341A /* ReadingListModel.h in Headers */,
+				B44995EE24CB18A2006D341A /* RLMAuthor.h in Headers */,
+				B44995F424CB18A2006D341A /* RLMStoreController.h in Headers */,
+				B44995F024CB18A2006D341A /* RLMModelObject.h in Headers */,
+				B44995F524CB18A2006D341A /* RLMReadingList.h in Headers */,
+				B44995E924CB18A2006D341A /* NSArray+RLMObjectMapping.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		B4225E6524C9F38D00CCCA32 /* ReadingList */ = {
@@ -91,15 +196,35 @@
 				B4225E6224C9F38D00CCCA32 /* Sources */,
 				B4225E6324C9F38D00CCCA32 /* Frameworks */,
 				B4225E6424C9F38D00CCCA32 /* Resources */,
+				B44995D924CB1731006D341A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B44995D324CB1731006D341A /* PBXTargetDependency */,
 			);
 			name = ReadingList;
 			productName = ReadingList;
 			productReference = B4225E6624C9F38D00CCCA32 /* ReadingList.app */;
 			productType = "com.apple.product-type.application";
+		};
+		B44995CC24CB1731006D341A /* ReadingListModel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B44995D624CB1731006D341A /* Build configuration list for PBXNativeTarget "ReadingListModel" */;
+			buildPhases = (
+				B44995C824CB1731006D341A /* Headers */,
+				B44995C924CB1731006D341A /* Sources */,
+				B44995CA24CB1731006D341A /* Frameworks */,
+				B44995CB24CB1731006D341A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReadingListModel;
+			productName = ReadingListModel;
+			productReference = B44995CD24CB1731006D341A /* ReadingListModel.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -111,6 +236,9 @@
 				ORGANIZATIONNAME = "About Objects";
 				TargetAttributes = {
 					B4225E6524C9F38D00CCCA32 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					B44995CC24CB1731006D341A = {
 						CreatedOnToolsVersion = 11.6;
 					};
 				};
@@ -129,6 +257,7 @@
 			projectRoot = "";
 			targets = (
 				B4225E6524C9F38D00CCCA32 /* ReadingList */,
+				B44995CC24CB1731006D341A /* ReadingListModel */,
 			);
 		};
 /* End PBXProject section */
@@ -141,6 +270,14 @@
 				B4225E7924C9F38F00CCCA32 /* LaunchScreen.storyboard in Resources */,
 				B4225E7624C9F38F00CCCA32 /* Assets.xcassets in Resources */,
 				B4225E7424C9F38D00CCCA32 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B44995CB24CB1731006D341A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B44995EF24CB18A2006D341A /* ReadingList.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,7 +296,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B44995C924CB1731006D341A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B44995F324CB18A2006D341A /* RLMAuthor.m in Sources */,
+				B44995EC24CB18A2006D341A /* RLMModelObject.m in Sources */,
+				B44995ED24CB18A2006D341A /* NSArray+RLMObjectMapping.m in Sources */,
+				B44995F124CB18A2006D341A /* RLMBook.m in Sources */,
+				B44995F224CB18A2006D341A /* RLMReadingList.m in Sources */,
+				B44995EB24CB18A2006D341A /* RLMStoreController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B44995D324CB1731006D341A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B44995CC24CB1731006D341A /* ReadingListModel */;
+			targetProxy = B44995D224CB1731006D341A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B4225E7224C9F38D00CCCA32 /* Main.storyboard */ = {
@@ -323,6 +481,56 @@
 			};
 			name = Release;
 		};
+		B44995D724CB1731006D341A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ReadingListModel/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aboutobjects.training.ReadingListModel;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B44995D824CB1731006D341A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ReadingListModel/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aboutobjects.training.ReadingListModel;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -340,6 +548,15 @@
 			buildConfigurations = (
 				B4225E8024C9F38F00CCCA32 /* Debug */,
 				B4225E8124C9F38F00CCCA32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B44995D624CB1731006D341A /* Build configuration list for PBXNativeTarget "ReadingListModel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B44995D724CB1731006D341A /* Debug */,
+				B44995D824CB1731006D341A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
