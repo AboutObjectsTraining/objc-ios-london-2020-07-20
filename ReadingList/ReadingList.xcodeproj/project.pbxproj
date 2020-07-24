@@ -34,6 +34,7 @@
 		B44995F824CB2EC4006D341A /* RELEditBookController.m in Sources */ = {isa = PBXBuildFile; fileRef = B44995F724CB2EC4006D341A /* RELEditBookController.m */; };
 		B44995FB24CB355A006D341A /* EditBook.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B44995F924CB355A006D341A /* EditBook.storyboard */; };
 		B44995FE24CB36BC006D341A /* RELAddBookController.m in Sources */ = {isa = PBXBuildFile; fileRef = B44995FD24CB36BC006D341A /* RELAddBookController.m */; };
+		B449960124CB424F006D341A /* AddBook.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B44995FF24CB424F006D341A /* AddBook.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +97,7 @@
 		B44995FA24CB355A006D341A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/EditBook.storyboard; sourceTree = "<group>"; };
 		B44995FC24CB36BC006D341A /* RELAddBookController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RELAddBookController.h; sourceTree = "<group>"; };
 		B44995FD24CB36BC006D341A /* RELAddBookController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RELAddBookController.m; sourceTree = "<group>"; };
+		B449960024CB424F006D341A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/AddBook.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 				B44995FC24CB36BC006D341A /* RELAddBookController.h */,
 				B44995FD24CB36BC006D341A /* RELAddBookController.m */,
 				B44995F924CB355A006D341A /* EditBook.storyboard */,
+				B44995FF24CB424F006D341A /* AddBook.storyboard */,
 				B4225E7224C9F38D00CCCA32 /* Main.storyboard */,
 				B4225E7524C9F38F00CCCA32 /* Assets.xcassets */,
 				B4225E7724C9F38F00CCCA32 /* LaunchScreen.storyboard */,
@@ -283,6 +286,7 @@
 				B4225E7924C9F38F00CCCA32 /* LaunchScreen.storyboard in Resources */,
 				B4225E7624C9F38F00CCCA32 /* Assets.xcassets in Resources */,
 				B4225E7424C9F38D00CCCA32 /* Main.storyboard in Resources */,
+				B449960124CB424F006D341A /* AddBook.storyboard in Resources */,
 				B44995FB24CB355A006D341A /* EditBook.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,6 +362,14 @@
 				B44995FA24CB355A006D341A /* Base */,
 			);
 			name = EditBook.storyboard;
+			sourceTree = "<group>";
+		};
+		B44995FF24CB424F006D341A /* AddBook.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B449960024CB424F006D341A /* Base */,
+			);
+			name = AddBook.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

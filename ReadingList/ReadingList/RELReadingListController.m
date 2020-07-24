@@ -13,6 +13,11 @@
 
 @implementation RELReadingListController
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    self.navigationItem.rightBarButtonItem = self.editButtonItem;
+}
+
 - (RLMReadingList *)readingList {
     if (_readingList == nil) {
         _readingList = self.storeController.fetchedReadingList;
@@ -61,6 +66,17 @@
     cell.textLabel.text = book.title;
     cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ %@", book.year, book.author.fullName];
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    [self.readingList removeBookAtIndexPath:indexPath];
+    [self.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+    [self.storeController saveReadingList:self.readingList];
+}
+
+- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath {
+    [self.readingList moveBookAtIndexPath:sourceIndexPath toIndexPath:destinationIndexPath];
+    [self.storeController saveReadingList:self.readingList];
 }
 
 @end
