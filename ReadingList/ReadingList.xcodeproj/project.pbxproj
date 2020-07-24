@@ -31,6 +31,9 @@
 		B44995F324CB18A2006D341A /* RLMAuthor.m in Sources */ = {isa = PBXBuildFile; fileRef = B44995E524CB18A2006D341A /* RLMAuthor.m */; };
 		B44995F424CB18A2006D341A /* RLMStoreController.h in Headers */ = {isa = PBXBuildFile; fileRef = B44995E624CB18A2006D341A /* RLMStoreController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B44995F524CB18A2006D341A /* RLMReadingList.h in Headers */ = {isa = PBXBuildFile; fileRef = B44995E724CB18A2006D341A /* RLMReadingList.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B44995F824CB2EC4006D341A /* RELEditBookController.m in Sources */ = {isa = PBXBuildFile; fileRef = B44995F724CB2EC4006D341A /* RELEditBookController.m */; };
+		B44995FB24CB355A006D341A /* EditBook.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B44995F924CB355A006D341A /* EditBook.storyboard */; };
+		B44995FE24CB36BC006D341A /* RELAddBookController.m in Sources */ = {isa = PBXBuildFile; fileRef = B44995FD24CB36BC006D341A /* RELAddBookController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +91,11 @@
 		B44995E524CB18A2006D341A /* RLMAuthor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLMAuthor.m; sourceTree = "<group>"; };
 		B44995E624CB18A2006D341A /* RLMStoreController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLMStoreController.h; sourceTree = "<group>"; };
 		B44995E724CB18A2006D341A /* RLMReadingList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLMReadingList.h; sourceTree = "<group>"; };
+		B44995F624CB2EC4006D341A /* RELEditBookController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RELEditBookController.h; sourceTree = "<group>"; };
+		B44995F724CB2EC4006D341A /* RELEditBookController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RELEditBookController.m; sourceTree = "<group>"; };
+		B44995FA24CB355A006D341A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/EditBook.storyboard; sourceTree = "<group>"; };
+		B44995FC24CB36BC006D341A /* RELAddBookController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RELAddBookController.h; sourceTree = "<group>"; };
+		B44995FD24CB36BC006D341A /* RELAddBookController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RELAddBookController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,8 +144,13 @@
 				B4225E6D24C9F38D00CCCA32 /* RELSceneDelegate.m */,
 				B44995C224CAFA8F006D341A /* RELReadingListController.h */,
 				B44995C324CAFA8F006D341A /* RELReadingListController.m */,
+				B44995F624CB2EC4006D341A /* RELEditBookController.h */,
+				B44995F724CB2EC4006D341A /* RELEditBookController.m */,
 				B44995C524CAFE78006D341A /* RELViewBookController.h */,
 				B44995C624CAFE78006D341A /* RELViewBookController.m */,
+				B44995FC24CB36BC006D341A /* RELAddBookController.h */,
+				B44995FD24CB36BC006D341A /* RELAddBookController.m */,
+				B44995F924CB355A006D341A /* EditBook.storyboard */,
 				B4225E7224C9F38D00CCCA32 /* Main.storyboard */,
 				B4225E7524C9F38F00CCCA32 /* Assets.xcassets */,
 				B4225E7724C9F38F00CCCA32 /* LaunchScreen.storyboard */,
@@ -270,6 +283,7 @@
 				B4225E7924C9F38F00CCCA32 /* LaunchScreen.storyboard in Resources */,
 				B4225E7624C9F38F00CCCA32 /* Assets.xcassets in Resources */,
 				B4225E7424C9F38D00CCCA32 /* Main.storyboard in Resources */,
+				B44995FB24CB355A006D341A /* EditBook.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,9 +304,11 @@
 			files = (
 				B44995C724CAFE78006D341A /* RELViewBookController.m in Sources */,
 				B4225E6B24C9F38D00CCCA32 /* RELAppDelegate.m in Sources */,
+				B44995F824CB2EC4006D341A /* RELEditBookController.m in Sources */,
 				B4225E7C24C9F38F00CCCA32 /* main.m in Sources */,
 				B44995C424CAFA8F006D341A /* RELReadingListController.m in Sources */,
 				B4225E6E24C9F38D00CCCA32 /* RELSceneDelegate.m in Sources */,
+				B44995FE24CB36BC006D341A /* RELAddBookController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +350,14 @@
 				B4225E7824C9F38F00CCCA32 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B44995F924CB355A006D341A /* EditBook.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B44995FA24CB355A006D341A /* Base */,
+			);
+			name = EditBook.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

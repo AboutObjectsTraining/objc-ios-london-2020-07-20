@@ -2,6 +2,8 @@
 // See LICENSE.txt for this project's licensing information.
 
 #import "RELReadingListController.h"
+#import "RELViewBookController.h"
+#import "RELAddBookController.h"
 #import <ReadingListModel/ReadingListModel.h>
 
 @interface RELReadingListController ()
@@ -18,10 +20,29 @@
     return _readingList;
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"View Book"]) {
+        RELViewBookController *controller = segue.destinationViewController;
+        NSIndexPath *indexPath = self.tableView.indexPathForSelectedRow;
+        RLMBook *book = [self.readingList bookAtIndexPath:indexPath];
+        controller.book = book;
+    } else {
+        UINavigationController *navController = segue.destinationViewController;
+        RELAddBookController *controller = navController.childViewControllers.firstObject;
+        typeof(self) __weak weakSelf = self;
+        controller.addBook = ^(RLMBook *book) {
+            NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+            [weakSelf.readingList insertBook:book atIndexPath:indexPath];
+            [weakSelf.tableView scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionTop animated:YES];
+        };
+    }
+}
+
 // MARK: - Unwind segues
 
 - (IBAction)done:(UIStoryboardSegue *)unwindSegue {
-    // TODO: sync UI and save data
+    [self.tableView reloadData];
+    [self.storeController saveReadingList:self.readingList];
 }
 
 - (IBAction)cancel:(UIStoryboardSegue *)unwindSegue {
@@ -38,6 +59,7 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Book Cell"];
     RLMBook *book = [self.readingList bookAtIndexPath:indexPath];
     cell.textLabel.text = book.title;
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ %@", book.year, book.author.fullName];
     return cell;
 }
 
